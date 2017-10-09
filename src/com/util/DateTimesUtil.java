@@ -26,10 +26,6 @@ public class DateTimesUtil {
     public static String formatTime10Str = "MMddHHmmss";
     public static String formatTimeHHmmStr = "HHmm";
 
-    public static void main(String[] args) {
-        System.out.print(DateTimesUtil.date(DateTimesUtil.formatDay8Str));
-    }
-
     public static String date(String fmt){
         return new SimpleDateFormat(fmt).format(new Date());
     }
